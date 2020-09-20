@@ -1,0 +1,343 @@
+JAVASCRIPT (JS) -- A Short Briefing
+_______________    ________________
+
+
+
+Note:   // and /* */ are comments in JS.
+-----
+
+//1.    printing in JS.
+/*document.write("document ")
+alert("hello world");
+console.log("document");*/
+
+//2.    JS console API (Application Programming Interface).
+/*console.log("hello world", 5 - 2, "NEW LOG")
+console.warn('warning');
+console.error('error');
+console.assert(6 == 7);*/
+
+//3.    JavaScript Variables.   ->variables in JS are containers that stores data values.
+/*var num1=22;
+var num2=22;
+document.write("<br>The subtraction of ",num1," and ",num2," is ", num1-num2);
+console.log(num1+num2);*/
+
+//4.    Datatypes in JavaScript.
+//There are 2 types of datatypes in JS.
+// i)  Primitive-> number, string, boolean, undefined, null, symbol
+// ii) Reference-> Array, Object
+
+//a.    Number
+/*var num3=45;
+var num4=45.23;*/
+
+//b.    String
+/*var str1="hello world";
+var str1='welcome to JS';*/
+
+//c.    Boolean
+/*var t=true;
+var f=false;
+document.write("<br><br>", t, " or ",f);*/
+
+//d.    Undefined
+/*var ud;
+console.log(ud);*/    //prints as undefined.
+
+//e.    Null
+/*var n=null;
+console.log(n);*/
+
+//f.    Object
+/*var occupation = {
+    sulav: "web developer",
+    suzen: "software engineer",
+    siyon: "android developer"
+}*/
+//console.log(occupation);
+
+//g.    Array
+/*var array=[1,"sulav",2,3,'adhikari'];
+console.log(array[1]);*/
+
+//5.    Operators in JavaScript.
+//Arithmetic Operator:
+/*var i = 5;
+var j = 4;
+var k = 0;
+console.log("Sum is: ", i+j);
+console.log("Sub is: ", i-j);
+console.log("Division is: ", i/k);
+console.log("Multiplication is: ", i*j);
+console.log("Modular is: ", k%i);*/
+
+//Assignment Operator:
+
+//Comparision Operator:
+
+//Logical Operator:
+/*(AND)
+console.log(true && true);
+console.log(false && false);
+console.log(false && true);
+console.log(true && false);
+
+(OR)
+console.log(true || true);
+console.log(false || false);
+console.log(false || true);
+console.log(true || false);
+
+(NOT)
+console.log(!true);
+console.log(!false);*/
+
+//6.    Function in JavaScript
+/*function add(a,b){
+    return a + b;
+}
+c=add(5,6);
+document.write("The sum is ", c);*/
+
+//7.    Conditional in JavaScript
+
+//8.    Loops in JS
+//for loop
+/*var array = [1,2,'3',"sulav",5];
+console.log(array);
+for(var i=0; i<array.length; i++){
+    console.log(array[i]);
+}*/
+//foreach loop
+/*var array = [1, 2, '3', "sulav", 5];
+array.forEach(function (Element) {
+    document.write(Element);
+})*/
+
+/*let l = 0;  //In JS, let is used more than var to define variable. As it consumes less memory in the system.
+const c = 0;    //if const is used then we can't change the value of a variable.
+c++;    //gives error as const variable value cannot be altered.
+*/
+
+//while loop
+/*let array = [1, 2, '3', "sulav", 5];
+let w = 0;
+while(w<array.length){
+    console.log(array[w]);
+    w++;
+}*/
+
+//do while loop
+/*let array = [1, 2, '3', "sulav", 5];
+let d=0;
+do{
+    console.log(array[d]);
+    d++;
+}while(d<array.length);*/
+
+//9.    Break and Continue 
+/*let array = [1,2,'3',"sulav",5];
+console.log(array);
+for(let i=0; i<array.length; i++){
+    if(i==1){
+        break;  //the further program gets terminated if i is equals to 1.
+    }
+    console.log(array[i]);
+}
+
+let array = [1,2,'3',"sulav",5];
+console.log(array);
+for(let i=0; i<array.length; i++){
+    if(i==1){
+        continue;   //the matched condition(i.e. i==1) is not executed but the further program gets executed.
+    }
+    console.log(array[i]);
+}*/
+
+//10.   Methods of Arrays
+/*let my_array = [1, 2.9, '3', "sulav", null, undefined, false];
+console.log(my_array);
+console.log(my_array.length);   //gives length of array i.e. 7.
+my_array.pop(); //last element gets removed. Here, false is removed.
+console.log(my_array);
+my_array.push("pushed");    //element gets added at last.
+console.log(my_array);
+my_array.shift();   //shift method removes the first element i.e. 1 is removed.
+console.log(my_array);
+my_array.unshift("Unshift");   //Unshift method adds the element to the first index of an array.
+console.log(my_array);
+my_array.toString();
+console.log(my_array);*/
+
+/*let my_array1 = [1, 3.9, 3342, 23224, 0];
+my_array1.sort();   //sort without compare function does not works for numbers. It only works for strings.
+console.log(my_array1);
+
+my_array1.sort(function(a,b){return a - b});    //sort with function works for numbers as well.
+console.log(my_array1);
+*/
+
+//11.   Methods of String in JavaScript
+/*let myString="Sulav. is a String.";
+console.log(myString);
+console.log(myString.length);
+console.log(myString.indexOf("."));
+console.log(myString.lastIndexOf("."));
+console.log(myString.slice(0,6));   //in slice, 1st parameter is included and last parameter is excluded. The range occurs from 0 to (n-1). In example; 0 index is included but 6 is not instead upto (6-1 = 5) is included.
+
+console.log(myString.replace("Sulav", "Adhikari"));
+console.log(myString.replace(".", ","));    //replace is applicable for only one occurance. In myString there is two dots(.) but using replace only one dot is replaced by , so replace only occurs for first occurance.
+*/
+
+//12.   Date in JavaScript
+/*let myDate = new Date();
+console.log(myDate);
+console.log(myDate.getTime());  //in seconds
+console.log(myDate.getFullYear());
+console.log(myDate.getDay());
+console.log(myDate.getHours());
+console.log(myDate.getMinutes());*/
+
+//13.    DOM(Document Object Model) manipulation
+//let elementID = document.getElementById('click');
+// console.log(elementID);
+
+// let elementClass = document.getElementsByClassName('container');
+// console.log(elementClass);
+
+// elementClass[0].style.border = '4px dotted red';
+// elementClass[0].style.background = 'lightblue';
+// elementClass[1].style.border = '2px dashed red';
+// elementClass[1].style.margin = '5px 0px';
+
+// elementClass[1].classList.add("hello");
+// elementClass[1].classList.remove("hello");
+
+// console.log(elementClass[0].innerHTML);
+// console.log(elementClass[0].innerText);
+
+//console.log(document.getElementsByTagName('p'));
+
+/*tn = document.getElementsByTagName('div')
+newCreatedElement = document.createElement('h3');
+newCreatedElement.innerText = 'New Element is Created.'
+tn[1].appendChild(newCreatedElement);*/
+
+
+/*getTag = document.getElementsByTagName('div');
+replaceElement = document.createElement('h3');
+replaceElement.innerText = 'Element is replaced..'
+getTag[1].replaceChild(replaceElement, newCreatedElement);*/
+//removeChild <!-- it is also a method -->
+
+
+//Selecting using QuerySelector
+/*select = document.querySelector('.container');
+console.log(select);
+select = document.querySelectorAll('.container');
+console.log(select);*/
+
+//14.   Events in JavaScript
+/*function clicked() {
+    console.log("Button Clicked....");
+}*/
+
+/*window.onload = function () {
+    console.log("Window Loaded..");
+}
+
+firstContainer.addEventListener('click', function () {
+    console.log("Clicked On Container....");
+})
+
+secondContainer.addEventListener('mouseover', function () {
+    console.log("Mouse On Container....");
+})
+
+secondContainer.addEventListener('mouseout', function () {
+    console.log("Mouse Out of Container....");
+})
+
+secondContainer.addEventListener('mouseup', function () {
+    console.log("Mouse up when clicked on Container....");
+})
+
+secondContainer.addEventListener('mousedown', function () {
+    console.log("Mouse down when clicked on Container....");
+})
+*/
+
+/*let prevHTML =  document.querySelectorAll('.container')[1].innerHTML
+firstContainer.addEventListener('mouseup', function () {
+    document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+})
+
+firstContainer.addEventListener('mousedown', function () {
+    document.querySelectorAll('.container')[1].innerHTML = "First Container Clicked..."
+})
+*/
+
+//15.   Arrow Function
+//For example; A function:
+/*function subtraction(a, b) {
+    return a - b;
+}
+sub = subtraction(4, 5);
+console.log("The subtraction is :",sub)
+*/
+
+//Using Arrow Function, the above function can be written as;
+/*subtraction = (a,b)=>{
+    return a-b;
+}
+sub = subtraction(8, 0);
+console.log("The subtraction is :",sub);
+*/
+
+//16.   Set TimeOut and Interval
+/*clr = setTimeout(timeSet,6000);   //setTimeout makes the content to arrive in particular time period. In timeSet method, the content displays in 6 sec.
+function timeSet(){
+    console.log("Use of set time out..");
+}
+*/
+
+/*clr1 = setInterval(timeSet,3000);  //setInterval is used to make something repeatedly. In above case,  timeSet function is repeated every 3 sec because of the use of setInterval.
+*/
+
+/*
+clearTimeout(clr);  //clearTimeout clears the assigned timeset
+clearInterval(clr1);    //clearInterval clears the assigned interval
+*/
+
+//17.   Local Storage in JavaScript
+//localStorage can be viewed in the Application section through inspect.
+//Perform local storage in console:
+
+/*localStorage.setItem('name', 'Sulav');
+localStorage.setItem('address', 'Nepal');
+
+localStorage.getItem('address');    //gives Nepal as a output.
+
+localStorage.removeItem('name)  //specific data is only removed.
+localStorage.clear();   //clears local storage. Local storage becomes empty
+*/
+
+//18.   JSON in JavaScript  //JSON does not support single quote but JS object supports.
+// obj = { name: "sulav", mobile: 2 };
+// console.log(typeof obj);    //type displays object
+// obj1 = JSON.stringify(obj);
+// console.log(typeof obj1);   //type changed to string using stringify
+
+// parsed = JSON.parse(obj1);
+// console.log(parsed);
+// console.log(typeof parsed); //type again changed to object with the help of parse.
+
+//19.   JavaScript Versions
+//Regarding ECMA Script, ES5, ES6 and many more...
+
+
+//BONUS-->  Template literals-Backticks(` `)
+/*let a = 34;
+console.log(`this is ${a}`);    // it represents the variable as string
+*/
